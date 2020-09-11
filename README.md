@@ -15,6 +15,11 @@ search for vault
 helm search repo hashicorp/vault
 ```
 
+download chart
+```bash
+helm fetch --untar hashicorp/vault
+```
+
 install vault
 ```bash
 helm install vault hashicorp/vault
