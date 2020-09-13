@@ -20,9 +20,17 @@ download chart
 helm fetch --untar hashicorp/vault
 ```
 
+create new namespace
+```bash
+kubectl create namespace vault
+```
+
 install vault
 ```bash
-helm install vault hashicorp/vault
+helm install vault hashicorp/vault -n vault \
+  --set server.dataStorage.enabled=false \
+  --set server.service.type=NodePort \
+  --set server.service.nodePort=30082
 ```
 
 https://www.vaultproject.io/docs/platform/k8s/helm
