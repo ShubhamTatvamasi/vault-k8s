@@ -33,5 +33,7 @@ helm install vault hashicorp/vault -n vault \
   --set server.service.nodePort=30082
 ```
 
+http://k8s.shubhamtatvamasi.com:30082
+
 https://www.vaultproject.io/docs/platform/k8s/helm
 
