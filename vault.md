@@ -11,7 +11,7 @@ path "*"
 
 create new token
 ```
-vault write auth/token/create policies=qa period=720h
+vault write auth/token/create policies=superuser period=720h
 ```
 
 create root token
