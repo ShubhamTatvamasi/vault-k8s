@@ -35,5 +35,33 @@ helm install vault hashicorp/vault -n vault \
 
 http://k8s.shubhamtatvamasi.com:30082
 
+---
+
+Add Ingress value
+```yaml
+kubectl apply -f - << EOF
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: vault
+spec:
+
+  tls:
+  - hosts:
+      - vault.k8s.shubhamtatvamasi.com
+    secretName: letsencrypt
+
+  rules:
+  - host: vault.k8s.shubhamtatvamasi.com
+    http:
+      paths:
+      - backend:
+          serviceName: vault-internal
+          servicePort: 8200
+EOF
+```
+
+https://vault.k8s.shubhamtatvamasi.com:30443
+
 https://www.vaultproject.io/docs/platform/k8s/helm
 
