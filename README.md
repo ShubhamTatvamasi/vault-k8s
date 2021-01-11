@@ -37,6 +37,14 @@ http://k8s.shubhamtatvamasi.com:30082
 
 ---
 
+Create TLS secret:
+```bash
+kubectl create secret tls letsencrypt \
+  --key ./shubhamtatvamasi.com.key \
+  --cert ./fullchain.cer \
+  -n vault
+```
+
 Add Ingress value
 ```yaml
 kubectl apply -f - << EOF
