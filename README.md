@@ -27,6 +27,19 @@ kubectl create namespace vault
 
 ### Ingress
 
+Install with tls:
+```bash
+helm install vault hashicorp/vault \
+  --create-namespace \
+  --namespace vault \
+  --set server.ingress.enabled=true \
+  --set "server.ingress.tls[0].secretName=vault-tls" \
+  --set server.ingress.annotations."cert-manager\.io/cluster-issuer"=letsencrypt \
+  --set "server.ingress.hosts[0].host=vault.k8s.shubhamtatvamasi.com" \
+  --set "server.ingress.tls[0].hosts[0]=vault.k8s.shubhamtatvamasi.com"
+```
+
+install with http:
 ```bash
 helm install vault hashicorp/vault \
   --create-namespace \
