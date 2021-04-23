@@ -25,6 +25,18 @@ create new namespace
 kubectl create namespace vault
 ```
 
+### Ingress
+
+```bash
+helm install vault hashicorp/vault \
+  --create-namespace \
+  --namespace vault \
+  --set server.ingress.enabled=true \
+  --set "server.ingress.hosts[0].host=vault.k8s.shubhamtatvamasi.com"
+```
+
+### NodePort
+
 install vault
 ```bash
 helm install vault hashicorp/vault -n vault \
