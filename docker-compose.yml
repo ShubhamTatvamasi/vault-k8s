@@ -6,8 +6,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./vault/config:/vault/config
-      - ./vault/policies:/vault/policies
-      - ./vault/data:/vault/data
+      - ./vault/file:/vault/file
     ports:
       - 8200:8200
     environment:
