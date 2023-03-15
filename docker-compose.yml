@@ -2,6 +2,7 @@ version: '3'
 services:
   vault:
     image: vault
+    container_name: vault
     volumes:
       - ./vault/config:/vault/config
       - ./vault/policies:/vault/policies
