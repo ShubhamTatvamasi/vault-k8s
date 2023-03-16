@@ -15,3 +15,9 @@ Check the Vault status:
 vault status
 ```
 
+Read secrets from vault:
+```bash
+vault kv get -mount=secret first-secret
+vault kv get -mount=secret -version=01 first-secret
+```
+
