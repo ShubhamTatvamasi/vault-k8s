@@ -18,7 +18,7 @@ vault status
 Read secrets from vault:
 ```bash
 vault kv get -mount=secret first-secret
-vault kv get -mount=secret -version=01 first-secret # get a specfic version
+vault kv get -mount=secret -version=1 first-secret # get a specfic version
 ```
 
 Create secret:
