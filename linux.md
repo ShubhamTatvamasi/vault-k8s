@@ -38,3 +38,10 @@ Undelete a version:
 vault kv undelete -mount=secret -versions=2 first-secret
 vault kv undelete -mount=secret -versions=2,1 first-secret # undelete multiple versions
 ```
+
+Permanently delete a secret:
+```bash
+vault kv destroy -mount=secret -versions=2 first-secret
+```
+
+
