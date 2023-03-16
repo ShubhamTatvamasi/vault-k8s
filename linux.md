@@ -27,8 +27,12 @@ vault kv put -mount=secret second-secret user=admin01
 vault kv put -mount=secret second-secret user=admin02 # this will create a new version
 ```
 
-Delete the version:
+Delete a version:
 ```bash
 vault kv delete -mount=secret -versions=2 first-secret
 ```
 
+Undelete a version:
+```bash
+vault kv undelete -mount=secret -versions=2 first-secret
+```
