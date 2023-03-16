@@ -36,4 +36,5 @@ vault kv delete -mount=secret -versions=2,1 first-secret # delete multiple versi
 Undelete a version:
 ```bash
 vault kv undelete -mount=secret -versions=2 first-secret
+vault kv undelete -mount=secret -versions=2,1 first-secret # undelete multiple versions
 ```
