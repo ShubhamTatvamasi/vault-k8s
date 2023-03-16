@@ -21,3 +21,8 @@ vault kv get -mount=secret first-secret
 vault kv get -mount=secret -version=01 first-secret
 ```
 
+Create secret:
+```bash
+vault kv put -mount=secret second-secret user=admin01
+```
+
