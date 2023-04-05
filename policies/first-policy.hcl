@@ -11,5 +11,5 @@ path "secret/*" {
 }
 
 path "secret/second-secret" {
-    capabilities = ["denay"]
+    capabilities = ["deny"]
 }
