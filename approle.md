@@ -7,3 +7,9 @@ Create an approle:
 ```bash
 vault write auth/approle/role/jenkins token_policies="jenkins-role-policy"
 ```
+
+Read the approle:
+```bash
+vault read auth/approle/role/jenkins
+```
+
