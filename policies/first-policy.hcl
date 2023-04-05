@@ -5,3 +5,7 @@ path "sys/mounts" {
 path "sys/policies/acl" {
     capabilities = ["read", "list"]
 }
+
+path "secret/first-secret" {
+    capabilities = ["read"]
+}
