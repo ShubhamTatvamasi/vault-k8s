@@ -9,3 +9,7 @@ path "secret/metadata" {
 path "secret/metadata/first" {
     capabilities = ["read"]
 }
+
+path "secret/destroy/first" {
+    capabilities = ["update"]
+}
