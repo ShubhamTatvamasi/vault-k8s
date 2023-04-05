@@ -13,3 +13,7 @@ path "secret/metadata/first" {
 path "secret/destroy/first" {
     capabilities = ["update"]
 }
+
+path "secret/metadata/first" {
+    capabilities = ["delete"]
+}
