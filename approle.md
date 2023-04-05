@@ -13,3 +13,7 @@ Read the approle:
 vault read auth/approle/role/jenkins
 ```
 
+Get the role ID:
+```bash
+vault read auth/approle/role/jenkins/role-id
+```
