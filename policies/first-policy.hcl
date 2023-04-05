@@ -6,6 +6,10 @@ path "sys/policies/acl" {
     capabilities = ["read", "list"]
 }
 
-path "secret/first-secret" {
+path "secret/*" {
     capabilities = ["read"]
+}
+
+path "secret/second-secret" {
+    capabilities = ["denay"]
 }
