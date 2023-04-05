@@ -44,4 +44,10 @@ Permanently delete a secret:
 vault kv destroy -mount=secret -versions=2 first-secret
 ```
 
+---
+
+Login to vault server:
+```bash
+vault login -method=userpass username=username
+```
 
