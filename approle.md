@@ -17,3 +17,8 @@ Get the role ID:
 ```bash
 vault read auth/approle/role/jenkins/role-id
 ```
+
+Genetrate secret ID:
+```bash
+vault write -f auth/approle/role/jenkins/secret-id
+```
