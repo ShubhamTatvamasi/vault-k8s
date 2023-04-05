@@ -10,6 +10,6 @@ path "secret/*" {
     capabilities = ["read"]
 }
 
-path "secret/second-secret" {
+path "secret/data/second-secret" {
     capabilities = ["deny"]
 }
