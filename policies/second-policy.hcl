@@ -5,3 +5,7 @@ path "secret/data/first" {
 path "secret/metadata" {
     capabilities = ["list"]
 }
+
+path "secret/metadata/first" {
+    capabilities = ["read"]
+}
