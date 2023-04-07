@@ -5,6 +5,11 @@ Start Vault in dev mode:
 vault server -dev
 ```
 
+Vault print token:
+```bash
+vault print token
+```
+
 Add the Vault address environment variable:
 ```bash
 export VAULT_ADDR='http://127.0.0.1:8200'
