@@ -10,6 +10,11 @@ Vault print token:
 vault print token
 ```
 
+List the token capabilities for a specfic path:
+```bash
+vault token capabilities sys/
+```
+
 Add the Vault address environment variable:
 ```bash
 export VAULT_ADDR='http://127.0.0.1:8200'
