@@ -18,6 +18,6 @@ kubectl get secret vault-unseal-keys -o yaml -n vault | \
 
 
 ```bash
-kubectl get secret openbao-unseal-keys -o yaml -n openbao | \
+kubectl get secret bank-vaults -o yaml -n openbao | \
   yq '.data |= with_entries(.value |= @base64d)'
 ```
