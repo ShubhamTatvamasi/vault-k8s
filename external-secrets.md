@@ -3,7 +3,7 @@
 Add Kubernetes Auth method:
 ```bash
 vault write auth/kubernetes/config \
-  kubernetes_host=https://kubernetes.default.svc.cluster.local
+  kubernetes_host=https://kubernetes.default.svc
 ```
 
 Create a role for `external-secrets`:
